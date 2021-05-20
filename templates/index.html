@@ -7,9 +7,6 @@
         width: 100%;
         height: 50%;
     }
-    #hello{
-      color: blue;
-  }
 </style>
 
 <!--slide window-->
@@ -52,7 +49,12 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <div class="col-md-12 text-center">
+         <a href="/ticketoneway" style="width: 500px; height: 50px;" type="button" class="btn btn-success btn-lg">Book a flight</a>
+    </div>
+    <br>
+    {% block ticket %}
 
-<p id="hello" >hell yeaaah</p>
+    {% endblock %}
 
 {% endblock %}
