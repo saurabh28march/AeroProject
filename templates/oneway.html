@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "index.html" %} {% block ticket %}
 
 <div style="text-align: center">
@@ -63,3 +64,48 @@
 </div>
 
 {% endblock %}
+=======
+{% extends "index.html" %}
+
+
+{% block ticket %}
+
+<div style="text-align:center;"> 
+    <div class="form-check form-check-inline text-center">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+    <label class="form-check-label" for="inlineRadio1">One way</label>
+    </div>
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" >
+    <label class="form-check-label" for="inlineRadio2">Round trip</label>
+    </div>
+    <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">Multi trip</label>
+    </div>
+
+    <form style=" width: 700px;
+    margin: 0 auto;">
+        <div class="row">
+            <div class="col">
+            <input type="text" class="form-control" placeholder="From">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" placeholder="To destination">
+            </div>
+        </div>
+<br>
+        <div class="row">
+            <div class="col">
+            <p>Date and time: &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input class="w3-input w3-padding-16" type="datetime-local" required name="Date : " value="2017-11-16T20:00"></p>
+            </div>
+        </div>
+
+        <br><br><br>
+    </form>
+
+</div>
+
+{% endblock %}
+>>>>>>> 4b61f017c57b3d7245fb2e13689c876930a76fb3
