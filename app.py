@@ -10,4 +10,9 @@ def index():
 def ticket1():
     return render_template("oneway.html")
 
+
+@app.route("/fedback")
+def feedback():
+    return render_template('feedback.html')
+
 app.run(debug=True)
