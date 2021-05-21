@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
 
@@ -22,6 +22,8 @@ def feedback():
 def bugreport():
     return render_template('bugreport.html')
 
-
+@app.route("/")
+def demo():
+    return render_template('demo.html')
 
 app.run(debug=True)

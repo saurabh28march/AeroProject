@@ -30,14 +30,14 @@
         ></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
         <a
-          href="#band"
+          href="{{url_for('bugreport')}}"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >BAND</a
+          >BUG REPORT</a
         >
         <a
-          href="#tour"
+          href="{{url_for('feedback')}}"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
-          >TOUR</a
+          >FEEDBACK</a
         >
         <a
           href="#contact"
@@ -72,25 +72,19 @@
         href="#band"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
-        >BAND</a
+        >BUG REPORT</a
       >
       <a
         href="#tour"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
-        >TOUR</a
+        >FEEDBACK</a
       >
       <a
         href="#contact"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
-        >CONTACT</a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large"
-        onclick="myFunction()"
-        >MERCH</a
+        >ASSISTANCE</a
       >
     </div>
 
@@ -105,8 +99,7 @@
         <div
           class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
         >
-          <h3>Los Angeles</h3>
-          <p><b>We had the best time playing at Venice Beach!</b></p>
+          <h3 style="color: black">Los Angeles</h3>
         </div>
       </div>
       <div class="mySlides w3-display-container w3-center">
@@ -117,8 +110,7 @@
         <div
           class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
         >
-          <h3>New York</h3>
-          <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+          <h3 style="color: black">New York</h3>
         </div>
       </div>
       <div class="mySlides w3-display-container w3-center">
@@ -129,8 +121,7 @@
         <div
           class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"
         >
-          <h3>Chicago</h3>
-          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+          <h3 style="color: black">Chicago</h3>
         </div>
       </div>
 
@@ -141,46 +132,34 @@
         id="band"
       >
         <h2 class="w3-wide">KONNEX</h2>
-        <p class="w3-opacity"><i>We love music</i></p>
-        <p class="w3-justify">
-          We have created a fictional band website. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
+        <p class="w3-opacity"><i>An Application Assistant</i></p>
+        <p class="w3-justify">conntent to be displayed</p>
         <div class="w3-row w3-padding-32">
           <div class="w3-third">
-            <p>Name</p>
+            <p></p>
             <img
-              src="/w3images/bandmember.jpg"
+              src="https://www.pwc.ca/-/media/airtime-blog/turboshaft-header.ashx"
               class="w3-round w3-margin-bottom"
               alt="Random Name"
-              style="width: 60%"
+              style="width: 100%"
             />
           </div>
           <div class="w3-third">
-            <p>Name</p>
+            <p></p>
             <img
-              src="/w3images/bandmember.jpg"
+              src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/A-dreamstime_xxl_24068579_efwghs.jpg"
               class="w3-round w3-margin-bottom"
               alt="Random Name"
-              style="width: 60%"
+              style="width: 85%"
             />
           </div>
           <div class="w3-third">
-            <p>Name</p>
+            <p></p>
             <img
-              src="/w3images/bandmember.jpg"
+              src="https://www.aerospace-technology.com/wp-content/uploads/sites/15/2017/10/1l-Image-A380-800.jpg"
               class="w3-round"
               alt="Random Name"
-              style="width: 60%"
+              style="width: 80%"
             />
           </div>
         </div>
@@ -192,7 +171,7 @@
           class="w3-container w3-content w3-padding-64"
           style="max-width: 800px"
         >
-          <h2 class="w3-wide w3-center">TOUR DATES</h2>
+          <h2 class="w3-wide w3-center">BOOK Flights</h2>
           <p class="w3-opacity w3-center">
             <i>Remember to book your tickets!</i>
           </p>
@@ -214,34 +193,34 @@
           <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px">
             <div class="w3-third w3-margin-bottom">
               <img
-                src="/w3images/newyork.jpg"
+                src="https://3lh7p51kulm221g0tm12g0tg-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/new-york-city-small-business-digital-marketing.jpg"
                 alt="New York"
                 style="width: 100%"
                 class="w3-hover-opacity"
               />
               <div class="w3-container w3-white">
                 <p><b>New York</b></p>
-                <p class="w3-opacity">Fri 27 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p class="w3-opacity">Fri 25 Nov 2021</p>
+                <p></p>
                 <button
                   class="w3-button w3-black w3-margin-bottom"
                   onclick="document.getElementById('ticketModal').style.display='block'"
                 >
-                  Buy Tickets
+                  Check Avalibility
                 </button>
               </div>
             </div>
             <div class="w3-third w3-margin-bottom">
               <img
-                src="/w3images/paris.jpg"
+                src="https://www.thestatesman.com/wp-content/uploads/2019/11/india-gate.jpg"
                 alt="Paris"
                 style="width: 100%"
                 class="w3-hover-opacity"
               />
               <div class="w3-container w3-white">
-                <p><b>Paris</b></p>
-                <p class="w3-opacity">Sat 28 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p><b>Delhi</b></p>
+                <p class="w3-opacity">Fri 25 Nov 2021</p>
+
                 <button
                   class="w3-button w3-black w3-margin-bottom"
                   onclick="document.getElementById('ticketModal').style.display='block'"
@@ -252,15 +231,14 @@
             </div>
             <div class="w3-third w3-margin-bottom">
               <img
-                src="/w3images/sanfran.jpg"
+                src="https://static.toiimg.com/photo/46525636.cms"
                 alt="San Francisco"
                 style="width: 100%"
                 class="w3-hover-opacity"
               />
               <div class="w3-container w3-white">
-                <p><b>San Francisco</b></p>
-                <p class="w3-opacity">Sun 29 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p><b>Banglore</b></p>
+                <p class="w3-opacity">Fri 25 Nov 2021</p>
                 <button
                   class="w3-button w3-black w3-margin-bottom"
                   onclick="document.getElementById('ticketModal').style.display='block'"
@@ -331,13 +309,12 @@
         id="contact"
       >
         <h2 class="w3-wide w3-center">CONTACT</h2>
-        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
         <div class="w3-row w3-padding-32">
           <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width: 30px"></i> Chicago, US<br />
-            <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
+            <i class="fa fa-map-marker" style="width: 30px"></i> Delhi, INDIA<br />
+            <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 456789<br />
             <i class="fa fa-envelope" style="width: 30px"> </i> Email:
-            mail@mail.com<br />
+            konnexmail@mail.com<br />
           </div>
           <div class="w3-col m6">
             <form action="/action_page.php" target="_blank">
@@ -384,7 +361,7 @@
 
     <!-- Image of location/map -->
     <img
-      src="/w3images/map.jpg"
+      src="https://iqeq.com/sites/default/files/styles/segment_banner/public/2019-05/Private%20Jet%20flying%20high%20res_0.jpg?itok=AEgJ_SVO"
       class="w3-image w3-greyscale-min"
       style="width: 100%"
     />
@@ -399,12 +376,6 @@
       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <p class="w3-medium">
-        Powered by
-        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-          >w3.css</a
-        >
-      </p>
     </footer>
 
     <script>
