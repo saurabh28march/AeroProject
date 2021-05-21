@@ -18,4 +18,10 @@ def ticket1():
 def feedback():
     return render_template('feedback.html')
 
+@app.route("/bugreport")
+def bugreport():
+    return render_template('bugreport.html')
+
+
+
 app.run(debug=True)
