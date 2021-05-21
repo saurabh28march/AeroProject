@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to KONNEX CHATBOT</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "59cd403b8187680007244146"; // put your chat widget id here
+
+      var BE_API = window.BE_API || {};
+
+      // open chat widget window after load
+      BE_API.onLoad = function () {
+        BE_API.openChatWidget();
+      };
+
+      (function () {
+        var be = document.createElement("script");
+        be.type = "text/javascript";
+        be.async = true;
+        be.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "cdn.botengine.ai/widget/plugin.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(be, s);
+      })();
+    </script>
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "60a79453da2c1d00077556d5";
+      (function () {
+        var be = document.createElement("script");
+        be.type = "text/javascript";
+        be.async = true;
+        be.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "cdn.chatbot.com/widget/plugin.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(be, s);
+      })();
+    </script>
+
+    <style type="text/css">
+      #botengine-chat {
+        width: 100% !important;
+      }
+    </style>
+  </body>
+</html>

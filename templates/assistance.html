@@ -1,0 +1,102 @@
+{% extends "base.html" %} {% block content %}
+<style>
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Noto Serif", serif;
+  }
+  .stepsp {
+    font-size: larger;
+  }
+  .parallax {
+    background-image: url("https://api.benefits.gov//sites/default/files/2020-08/tsM9C8Y%20-%20Imgur.jpg");
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 20px;
+  }
+  .wheelicon {
+    width: 70px;
+    height: 70px;
+  }
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 25px;
+  }
+  .sub1,
+  .sub2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+    margin: 20px 20px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    padding: 20px 20px;
+    align-items: center;
+  }
+  .video,
+  .steps {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stepsimg,
+  iframe {
+    width: 90%;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .stepsimg {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  section {
+    margin: 20px;
+    padding: 10px;
+  }
+  .step1,
+  .step2 {
+    margin: 10px;
+  }
+</style>
+<h2 style="margin: 25px">Special Disability/ Need Assistance?</h2>
+<div class="parallax"></div>
+
+<section>
+  <div class="section row">
+    <div class="sub1 col-md-12">
+      <a href="#"
+        ><img
+          class="wheelicon"
+          src="https://static.thenounproject.com/png/145569-200.png"
+          alt=""
+      /></a>
+      <h3>Special Assistance</h3>
+      <p></p>
+      <a href="/assistance/specialassistance"
+        ><button class="btn btn-outline-primary">Know More</button></a
+      >
+    </div>
+    <div class="sub2 col-md-12">
+      <a href="#"
+        ><img
+          class="wheelicon"
+          src="https://www.justiceeducation.ca/sites/default/files/pictures/shutterstock_400826242.jpg"
+          alt=""
+      /></a>
+      <h3>Disability Assistance</h3>
+      <p></p>
+      <a href="/disabledassistance"
+        ><button class="btn btn-outline-primary">Know More</button></a
+      >
+    </div>
+  </div>
+</section>
+
+{% block ticket %} {% endblock %} {% endblock %}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>W3.CSS Template</title>
+  <title>KONNEX</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -10,6 +10,17 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <style>
+    .float-button {
+      position: fixed;
+      right: -77px;
+      top: 270px;
+      transition: all 0.2s ease-in 0s;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .float-button:hover {
+      right: -7px; //hide it by pushing it off the screen
+    }
     body {
       font-family: "Lato", sans-serif;
     }
@@ -43,6 +54,11 @@
           href="#contact"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >CONTACT</a
+        >
+        <a
+          href="{{url_for('assistance')}}"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >ASSISTANCE</a
         >
         <div class="w3-dropdown-hover w3-hide-small">
           <button class="w3-padding-large w3-button" title="More">
@@ -81,7 +97,7 @@
         >FEEDBACK</a
       >
       <a
-        href="#contact"
+        href="{{url_for('assistance')}}"
         class="w3-bar-item w3-button w3-padding-large"
         onclick="myFunction()"
         >ASSISTANCE</a
@@ -133,7 +149,14 @@
       >
         <h2 class="w3-wide">KONNEX</h2>
         <p class="w3-opacity"><i>An Application Assistant</i></p>
-        <p class="w3-justify">conntent to be displayed</p>
+        <p class="w3-justify">
+          A new future in the domain of application assistant is not only
+          providing us with plethora of services like debugging window, chat bot
+          support, application navigation but also providing support to
+          specially disabled persons,elders (non tech savvy) with utmost
+          sincerity and affection .Building new future by collaborating and
+          helping each other to make world a better place.
+        </p>
         <div class="w3-row w3-padding-32">
           <div class="w3-third">
             <p></p>
@@ -365,6 +388,8 @@
       class="w3-image w3-greyscale-min"
       style="width: 100%"
     />
+
+    <!--float -->
 
     <!-- Footer -->
     <footer

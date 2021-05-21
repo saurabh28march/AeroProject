@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <title>KONNEX</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      * {
+        font-family: "Open Sans", sans-serif;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      iframe {
+        border: 0;
+        -webkit-box-shadow: 0px 0px 28px -2px rgba(214, 214, 214, 1);
+        -moz-box-shadow: 0px 0px 28px -2px rgba(214, 214, 214, 1);
+        box-shadow: 0px 0px 28px -2px rgba(214, 214, 214, 1);
+      }
+
+      nav {
+        width: 100%;
+        padding: 20px 20px;
+        background: #e0eaef;
+        margin-bottom: 40px;
+        color: #6d838e;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      header {
+        width: 1000px;
+        height: 250px;
+        margin: 0 auto;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        background: #d4e0e6;
+      }
+
+      section {
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        margin: 25px auto;
+      }
+
+      section > div.left {
+        width: 420px;
+        float: left;
+      }
+
+      section > div.right {
+        width: calc(100% - 420px);
+        float: left;
+        padding-left: 25px;
+      }
+
+      section > div.right > div {
+        width: calc(50% - 5px);
+        height: 250px;
+        background: #e8f1f5;
+        font-size: 15px;
+        padding: 50px;
+        float: left;
+        line-height: 30px;
+        color: #697276;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      section > div.right > div:nth-child(2n) {
+        margin-right: 10px;
+      }
+
+      section > div.right > div:first-child {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+
+      section > div.right > div > p {
+        width: 90%;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        background: #d4e0e6;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+
+      section > div.right > div > p:first-child {
+        width: 40%;
+        background: #c2d0d7;
+        padding: 7px;
+        margin-bottom: 25px;
+      }
+
+      section > div.right > div > p:nth-child(2n) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        header,
+        section {
+          width: 90%;
+        }
+        section > div.right > div {
+          width: 100%;
+          margin: 0 0 20px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        section > div.left,
+        section > div.right {
+          width: 100%;
+          padding: 20px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>KONNEX CHATBOT</nav>
+
+    <header></header>
+
+    <section>
+      <div class="left">
+        <iframe
+          src="{{url_for('widget')}}"
+          width="100%"
+          height="550"
+          border="0"
+        ></iframe>
+      </div>
+
+      <div class="right">
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

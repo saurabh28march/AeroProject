@@ -26,4 +26,26 @@ def bugreport():
 def demo():
     return render_template('demo.html')
 
+
+@app.route("/index1")
+def index1():
+    return render_template('index1.html')
+
+@app.route("/widget")
+def widget():
+    return render_template('widget.html')
+
+
+@app.route("/assistance", methods=["GET"])
+def assistance():
+    return render_template("assistance.html")
+
+@app.route("/assistance/specialassistance")
+def special():
+    return render_template("specialassist.html")
+
+@app.route("/disabledassistance")
+def disable():
+    return render_template("disabledassist.html")
+
 app.run(debug=True)
